@@ -29,6 +29,11 @@ from odoo.http import request
 from odoo.tools import float_utils
 from odoo.tools import format_duration
 from pytz import utc
+import os
+import logging
+
+_logger = logging.getLogger(__name__)
+import requests
 
 ROUNDING_FACTOR = 16
 
